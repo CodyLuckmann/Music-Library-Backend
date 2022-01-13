@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "31ae40be-59b2-4af6-a71a-997b1ab66363",
+		"name": "Music_Library_2_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get_All_Songs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/music/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"music",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_Song",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"What's Going On\",\r\n    \"artist\": \"Marvin Gaye\",\r\n    \"album\": \"What's Going On\",\r\n    \"genre\": \"Soul\",\r\n    \"release_date\": \"1971-01-02\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/music/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"music",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Song_By_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Song",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/music//",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"music",
+						"",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Song",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Twinkle Twinkle Little Star\",\r\n    \"artist\": \"unknown\",\r\n    \"album\": \"Nursery Rhymes\",\r\n    \"genre\": \"lullaby\",\r\n    \"release_date\": \"2021-11-08\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/music/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"music",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
