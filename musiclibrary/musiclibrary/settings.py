@@ -19,6 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
+CORS_ORIGIN_ALLOW_ALL=True
 
 
 
@@ -53,7 +54,6 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware'
 ]
 
-CORS_ORIGN_ALLOW_ALL=True
 
 ROOT_URLCONF = 'musiclibrary.urls'
 
